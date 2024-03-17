@@ -9,7 +9,7 @@ type Props = {
 }
 
 const ContactUs = ({setSelectedPage}: Props) => {
-    const inputStyles = `mb-3 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`
+    const inputStyles = `mb-3 rounded-lg bg-primary-300 px-5 py-3 placeholder-white`
 
     const {
         register,
@@ -63,6 +63,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
                     }}
                 >
                     <form
+                        className="flex flex-col"
                         target="_blank"
                         onSubmit={onSubmit}
                         action="https://formsubmit.co/linae0343@gmail.com"
@@ -136,7 +137,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
                     visible: { opacity: 1, y: 0 },
                     }}
                 >
-                    <div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext">
+                    <div className="w-full relative before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext">
                         <img 
                             className="w-full"
                             alt="contact-us-page-graphic"
